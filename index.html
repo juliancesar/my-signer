@@ -55,9 +55,13 @@
                 </p>
 
                 <ul class="list-group">
+                    <li class="list-group-item" ng-class="{ 'list-group-item-success' : supportedBrowser, 'list-group-item-danger' : !supportedBrowser }">
+                        <span ng-show="supportedBrowser" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+                        <span ng-show="!supportedBrowser" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>                        Supported Browser 
+                    </li>
                     <li class="list-group-item" ng-class="{ 'list-group-item-success' : desktopInstalled, 'list-group-item-danger' : !desktopInstalled }">
                         <span ng-show="desktopInstalled" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-                        <span ng-show="!desktopInstalled" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>                        Application installed <a href="./serpro-signer-1.0.jar">Download Here</a>
+                        <span ng-show="!desktopInstalled" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>                        Application Installed
                     </li>
                     <li class="list-group-item" ng-class="{ 'list-group-item-success' : desktopRunning, 'list-group-item-danger' : !desktopRunning }">
                         <span ng-show="desktopRunning" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
@@ -65,7 +69,7 @@
                     </li>
                     <li class="list-group-item" ng-class="{ 'list-group-item-success' : desktopEnabled, 'list-group-item-danger' : !desktopEnabled }">
                         <span ng-show="desktopEnabled" class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
-                        <span ng-show="!desktopEnabled" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>                        Security is enabled <a href="http://localhost:65056/" target="_blank">Click here</a>
+                        <span ng-show="!desktopEnabled" class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span>                        Security is Enabled <a href="http://localhost:65056/" target="_blank">Click here</a>
                     </li>
                 </ul>
 
